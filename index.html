@@ -133,6 +133,9 @@ overflow: hidden;
 
 .container-one{
   /*first container */
+  display: flex; 
+  align-items: flex-start;
+  overflow: hidden; 
   border-width: 1px;
   border-style: solid;
   border-color: #015a78;
@@ -148,12 +151,15 @@ overflow: hidden;
 
 #name{ 
 /* name */
-font-family: kawaii stitch;
+  position: absolute;     /* Pulls the name out of the flex row so it floats on top */
+  top: 110px;
+  left: 10px;
+  margin: 0;
+  z-index: 10;
+  font-family: kawaii stitch;
   font-size: 2.5em;
   -webkit-text-stroke: 1px white;
   color: #042e60;
-  margin-top: 110px;
-  margin-left: 10px;
 }
 
 .outer
@@ -183,7 +189,7 @@ margin-top: 10px;
 /* for plain background */
 background: #FE82B624;
 
-/* vv for image background. remove if want plain */
+/* for image background. remove if want plain */
 background-image:url(https://dl.glitter-graphics.com/pub/3280/3280187fn0bvl7irz.jpg);
 background-repeat:repeat;
 background-size:cover;
@@ -412,11 +418,21 @@ font-weight:bold;
 </style>
 
 <div class="container">
-  <div class="container-one"> <!--hey alyhias you can add a border on the main picture later, video is at 34 mins--> 
-    <div id="name">alyhias's website!</div>
+
+  <div class="container-one"> <!--This is the main container, and is the border and the title--> 
+    <img src="images/jinglebells.webp"><img src="images/jinglebells.webp"><img src="images/jinglebells.webp"><img src="images/jinglebells.webp">
+    <div id="name">alyhias' website!</div>
   </div>
 
-  <div class="outer"><div class="inner"></div></div>
+<!--This is the image of me-->
+<div class="outer"><div class="inner"></div></div>
+
+<!--This is the introduction box-->
+<div class="bg"><div class="in"><div class="intro">introduction <img src="images/littlemario.gif"></div>
+idk why you here but hi! My name is <mark>Alyhias</mark> which if you couldn't tell by now... thats concerning <img src="images/blinkingcat.gif"> 
+Anyways, I dont know what is going to be put on this website yet, but you should check back later to see if anything has been added! Thanks for stopping by. <img src="images/lil-hamster.gif">
+</div></div>
+
 
 </div>
 </body>
